@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tribute to Valentino Rossi</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #goTopBtn {
+      display: none;
+      position: fixed;
+      bottom: 40px;
+      right: 40px;
+      z-index: 100;
+      font-size: 24px;
+      background-color: #0057b7;
+      color: white;
+      border: none;
+      padding: 12px 16px;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      transition: background-color 0.3s ease;
+    }
+
+    #goTopBtn:hover {
+      background-color: #ffcc00;
+    }
+  </style>
+</head>
+<body>
+    <nav>
+    <div class="logo">MyWebsite</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#career">Career</a></li>
+      <li><a href="#highlights">Highlights</a></li>
+      <li><a href="#legacy">Legacy</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <header>
+      <h1>Valentino Rossi</h1>
+      <p>The Doctor of MotoGP</p>
+    </header>
+
+    <section class="image-section">
+      <img src="rossiimg.jpg" alt="Valentino Rossi">
+      <figcaption>Valentino Rossi at the 2019 MotoGP</figcaption>
+    </section>
+
+    <section id="home">
+      <h2>Home</h2>
+      <p>Welcome to the tribute page for Valentino Rossi, the legendary MotoGP rider.</p>
+    </section>
+
+    <section class="content">
+      <h2>About</h2>
+      <p>
+        Valentino Rossi (/ˈrɒsi/ ROSS-ee; Italian: [valenˈtiːno ˈrossi]; born 16 February 1979) is an Italian racing driver, former professional motorcycle road racer and nine-time Grand Prix motorcycle racing World Champion. Nicknamed "the Doctor", Rossi is widely considered one of the greatest motorcycle racers of all time.[a] He is also the only road racer to have competed in 400 or more Grands Prix.[4] Of Rossi's nine Grand Prix World Championships, seven were in the premier 500cc/MotoGP class. He holds the record for most premier class victories and podiums, with 89 victories and 199 podiums to his name. He won premier class World Championships with both Honda and Yamaha. He rode with the number 46 for his entire career.
+
+After graduating to the premier class in 2000, Rossi won the final 500cc World Championship (becoming the last satellite rider to win the top-class title until Jorge Martín in 2024) and the Suzuka 8 Hours race with Honda in 2001. He also won MotoGP World Championships with the factory Repsol Honda team in 2002 and 2003 and continued his run of back-to-back championships by winning the 2004 and 2005 titles after leaving Honda to join Yamaha. He lost the 2006 title with a crash in the final round at Valencia. In 2007, he ultimately finished third overall, before regaining the title in 2008 and retaining it in 2009.[5] After a 2010 season marred by a broken leg and no title defense, he left Yamaha to join the Ducati factory team, replacing Casey Stoner for the 2011 and 2012 seasons, and endured two winless seasons with the Italian marque
+      </section>
+
+      <h2>Career Highlights</h2>
+      <ul>
+        <li>9-time World Champion</li>
+        <li>115 Grand Prix wins</li>
+        <li>Premier class debut in 2000</li>
+        <li>Famous for racing with the number 46</li>
+        <li>Nicknamed "The Doctor"</li>
+      </ul>
+
+      <h2>Legacy</h2>
+      <p>
+        Rossi retired from professional racing in 2021, leaving behind a legacy that shaped the modern era of MotoGP. He continues to influence the sport through his VR46 Academy and team.
+      </p>
+    </section>
+
+    <section id="career">
+      <h2>Career</h2>
+      <ul>
+        <li>9-time World Champion</li>
+        <li>115 Grand Prix wins</li>
+        <li>Premier class debut in 2000</li>
+        <li>Famous for racing with the number 46</li>
+        <li>Nicknamed "The Doctor"</li>
+      </ul>
+    </section>
+
+    <section id="highlights">
+      <h2>Highlights</h2>
+      <p>Some of Rossi's most memorable moments include his epic battles with rivals, dramatic race wins, and his unique celebrations.</p>
+    </section>
+
+    <section id="legacy">
+      <h2>Legacy</h2>
+      <p>
+        Rossi retired from professional racing in 2021, leaving behind a legacy that shaped the modern era of MotoGP. He continues to influence the sport through his VR46 Academy and team.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>For more information, visit the official MotoGP website or follow Rossi on social media.</p>
+    </section>
+
+    <footer>
+      <p>Tribute created by Anup Rathod &copy; 2025</p>
+    </footer>
+  </div>
+  <button id="goTopBtn" title="Go to top">&#8679;</button>
+  <script>
+  window.onscroll = function() {
+    const btn = document.getElementById('goTopBtn');
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      btn.style.display = 'block';
+    } else {
+      btn.style.display = 'none';
+    }
+  };
+  document.getElementById('goTopBtn').onclick = function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+</script>
+</body>
+</html>
